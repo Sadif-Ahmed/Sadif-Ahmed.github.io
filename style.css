@@ -1,34 +1,102 @@
+/* Grad Researcher - Fresh, Professional, and Readable Style (style.css) */
+
+/* --- Base Typography and Colors --- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Georgia', serif; /* Classic serif font for academic feel */
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  line-height: 1.7; /* Increased line-height for better text flow */
+  background-color: #f7f7f7; /* Very light gray/off-white background */
+  color: #333333; /* Dark gray for main text, highly readable */
 }
 
 header, section {
-  padding: 20px;
-  max-width: 900px;
+  padding: 40px 20px; /* Increased top/bottom padding for more breathing room */
+  max-width: 800px; /* Slightly narrower content area to optimize for reading */
   margin: auto;
+  background-color: #ffffff; /* White background for the main content block */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Very subtle shadow to lift content */
 }
 
 h1, h2, h3 {
-  color: #58a6ff;
+  color: #004d99; /* Deep, professional Navy Blue accent */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean sans-serif for headings */
+  font-weight: 600;
+  border-bottom: 1px solid #eeeeee; /* Subtle line under headings */
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+h1 {
+  border-bottom: 2px solid #004d99; /* Stronger line for the main title */
+  padding-bottom: 10px;
 }
 
 a {
-  color: #58a6ff;
+  color: #0066cc; /* Medium academic blue for links */
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s; /* Smooth color transition */
 }
 
 a:hover {
   text-decoration: underline;
+  color: #004d99; /* Deepen color on hover */
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  border-top: 1px solid #30363d;
-  margin-top: 20px;
+/* --- Layout and Navigation --- */
+header {
+    text-align: center; /* Center the profile header content */
+    padding-bottom: 20px;
+}
+
+nav {
+    padding-bottom: 20px;
+}
+
+nav a { 
+    margin: 0 10px; 
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+/* Clearer Rule for Separation */
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* --- Profile Specific Styling --- */
+.profile-img { 
+    width: 120px; /* slightly reduced size */
+    height: 120px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid #004d99; /* Blue border to highlight the image */
+    margin-bottom: 10px;
+}
+
+.profile-header h1 {
+    font-size: 2.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: none; /* Remove line under main name */
+}
+
+.profile-header p {
+    margin: 3px 0;
+    color: #666666;
+    font-size: 0.95em;
+}
+
+/* Style for lists in the research interests section */
+section ul {
+    list-style: square; /* Use a simple square for academic lists */
+    padding-left: 20px;
+}
+section li {
+    margin-bottom: 5px;
 }

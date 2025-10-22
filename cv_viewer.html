@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer Example</title>
+    <title>Sadif Ahmed | View CV</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Optional CSS for better viewing experience */
+        /* Custom styles for this page, inheriting base styles from style.css */
+        
+        /* Override body styles for the CV viewer page to remove the main content box effect */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
+            background-color: #f7f7f7; /* Use the light gray background */
+        }
+        
+        /* Style the header area to match the rest of the site */
+        header {
+            padding: 20px 20px 0 20px; /* Reduce bottom padding */
+            max-width: 100%; /* Header spans full width for nav */
+            margin: auto;
+            background-color: #ffffff;
+            box-shadow: none; /* Remove shadow to separate from content */
+        }
+        
+        /* Ensure the main heading is styled correctly */
+        h1 {
+            color: #004d99;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            border-bottom: 2px solid #004d99;
+            padding-bottom: 10px;
+            max-width: 800px;
+            margin: 20px auto;
         }
 
+        /* Container for the PDF */
         #pdf-container {
-            width: 80%; /* Adjust width as needed */
-            height: 80vh; /* 80% of viewport height */
+            width: 90%; /* Use wider container for the document view */
+            height: 85vh; /* Larger view area */
             margin: 20px auto;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0; /* Clean, light border */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
 
         iframe {
@@ -27,24 +48,42 @@
             height: 100%;
             border: none;
         }
-        
+
+        /* Nav links are styled in style.css, but we use the header/nav structure */
+        nav {
+            padding-bottom: 20px;
+        }
+        nav a { 
+            margin: 0 10px; 
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 
 <body>
-    <h4><a href="index.html">Home</a>   <a href="experience.html">Experience & Research</a> <a href="education.html">Education & Honors</a> <a href="skills.html">Skills</a>    <a href="projects.html">Projects</a>    <a href="cv_viewer.html">CV</a><h4>
-    <h2>CV</h2>
-
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience & Research</a>
+            <a href="education.html">Education & Honors</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="cv_viewer.html">CV</a>
+        </nav>
+        <h1>Curriculum Vitae</h1>
+    </header>
     
     <div id="pdf-container">
-        <iframe src="assets/Resume_Academia.pdf" title="PDF Document Viewer">
-            <p>Your browser does not support iframes. You can <a href="path/to/your/document.pdf">download the PDF</a> instead.</p>
+        <iframe src="assets/Resume_Academia.pdf" title="Sadif Ahmed's Academic CV" loading="lazy">
+            <p>Your browser does not support iframes. You can <a href="assets/Resume_Academia.pdf" target="_blank">download the CV</a> instead.</p>
         </iframe>
     </div>
 
+    <footer>
+        <hr>
+        <p>© 2025 Sadif Ahmed</p>
+    </footer>
+
 </body>
 </html>
-
-
-
-

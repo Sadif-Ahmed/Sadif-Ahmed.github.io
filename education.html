@@ -6,7 +6,47 @@
     <title>Sadif Ahmed | Education</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        nav a { margin-right: 15px; }
+        /* Helper styles to support the academic aesthetic (moved here for cleanup) */
+        .education-entry {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 4px solid #004d99; /* Strong blue line for primary education */
+            background-color: #fcfcfc;
+        }
+        .education-entry h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            border-bottom: none;
+            color: #004d99;
+        }
+        .education-meta {
+            color: #666666;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #000000;
+        }
+        .coursework-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        .coursework-list li {
+            background-color: #eeeeee;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: #444444;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        /* Assuming contribution-list is defined in style.css or copied from previous responses */
     </style>
 </head>
 <body>
@@ -23,39 +63,58 @@
     </header>
 
     <section>
-        <h2>Education</h2>
+        <h2>🎓 Education</h2>
         
-        <h3>B.Sc. Computer Science</h3>
-        <p>Bangladesh University of Science & Technology (BUET), Dhaka, Bangladesh</p>
-        <p>Feb 2020 – March 2025</p>
-        <p>CGPA: 3.83 out of 4.00 (Final Year: 3.96/4.00)</p>
+        <div class="education-entry">
+            <h3>B.Sc. Computer Science</h3>
+            <p class="education-meta">Bangladesh University of Engineering & Technology (BUET), Dhaka, Bangladesh</p>
+            <p class="education-meta"><strong>Feb 2020 – March 2025</strong></p>
+            <p>
+                <span class="highlight">Overall CGPA: 3.83 out of 4.00</span> | 
+                <span class="highlight">Final Year: 3.96/4.00</span>
+            </p>
+        </div>
         
-        <h3>Higher Secondary School Certificate (HSC)</h3>
-        <p>Notre Dame College, Dhaka, Bangladesh</p>
-        <p>Jan 2017 – Jan 2019 | GPA: 5 out of 5</p>
+        <div class="education-entry">
+            <h3>Higher Secondary School Certificate (HSC)</h3>
+            <p class="education-meta">Notre Dame College, Dhaka, Bangladesh</p>
+            <p class="education-meta">Jan 2017 – Jan 2019 | <span class="highlight">GPA: 5 out of 5</span></p>
+        </div>
 
-        <h3>Secondary School Certificate (SSC)</h3>
-        <p>St. Joseph High School, Dhaka, Bangladesh</p>
-        <p>Jan 2009 – Dec 2016 | GPA: 5 out of 5</p>
+        <div class="education-entry">
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p class="education-meta">St. Joseph High School, Dhaka, Bangladesh</p>
+            <p class="education-meta">Jan 2009 – Dec 2016 | <span class="highlight">GPA: 5 out of 5</span></p>
+        </div>
     </section>
 
     <section>
-        <h2>Achievements & Honors</h2>
-        <ul>
-            <li>Dean's list award and university merit scholarship recipient in four out of eight terms.</li>
-            <li>Talent Pool Scholarship: Outstanding academic result in Higher Secondary Certificate Exam.</li>
-            <li>Top 20 finalists of Robi Datathon 2024.</li>
+        <h2>🏆 Achievements & Honors</h2>
+        <ul class="contribution-list"> 
+            <li>Dean's list award and university merit scholarship recipient in four terms of undergraduate study in BUET.</li>
+            <li>Talent Pool Scholarship for outstanding academic result in the Higher Secondary Certificate Exam.</li>
+            <li>Top 20 finalists of Robi Datathon 2024, a countrywide Deep Learning Competition.</li>
         </ul>
     </section>
 
     <section>
-        <h2>Key Related Coursework</h2>
-        <p>Structured Programming Language (C), Data Structures and Algorithms (C++), Object Oriented Programming (C++, Java), Software Engineering (Java), Database (SQL), Machine Learning (Python), Computer Architecture.</p>
+        <h2>📚 Key Related Coursework</h2>
+        <ul class="coursework-list">
+            <li>Structured Programming Language (C)</li>
+            <li>Data Structures and Algorithms (C++)</li>
+            <li>Object Oriented Programming (C++, Java)</li>
+            <li>Software Engineering (Java)</li>
+            <li>Database (SQL)</li>
+            <li>Machine Learning (Python)</li>
+            <li>Computer Architecture</li>
+            <li>Information Systems Design</li>
+            <li>Numerical Methods (Python)</li>
+        </ul>
     </section>
 
     <footer>
         <hr>
-        <p>© 2025 Sadif Ahmed | Built with ❤️</p>
+        <p>© 2025 Sadif Ahmed</p>
     </footer>
 </body>
 </html>

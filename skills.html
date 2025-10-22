@@ -6,7 +6,48 @@
     <title>Sadif Ahmed | Skills</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        nav a { margin-right: 15px; }
+        /* Helper styles for the skills page */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Default to single column */
+            gap: 20px 30px;
+        }
+        @media (min-width: 600px) {
+            .skills-grid {
+                grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+            }
+        }
+        .skill-category {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            background-color: #fcfcfc;
+        }
+        .skill-category h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eeeeee; /* Light separator line */
+            padding-bottom: 5px;
+            color: #004d99; /* Deep blue accent */
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.95em;
+        }
+        .skill-list li {
+            margin-bottom: 6px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .skill-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -23,31 +64,76 @@
     </header>
 
     <section>
-        <h2>Programming Languages</h2>
-        <p>C, C++, Java, JavaScript, TypeScript, Python, Latex</p>
-        
-        <h2>Frameworks & Web Development</h2>
-        <p>NodeJS, ExpressJS, SvelteJS</p>
-        
-        <h2>Machine Learning & Data Analysis</h2>
-        <p>TensorFlow, PyTorch, Matplotlib, NumPy, Pandas</p>
-        
-        <h2>Databases</h2>
-        <p>PostgreSQL, Oracle</p>
-        
-        <h2>Development Tools</h2>
-        <p>Git, Github, Github Projects, Linux OS</p>
+        <h2>🛠 Core Technical Competencies</h2>
 
-        <h2>Cloud Platforms</h2>
-        <p>Vercel, Supabase, Azure</p>
+        <div class="skills-grid">
 
-        <h2>Security Tools</h2>
-        <p>Velociraptor</p>
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul class="skill-list">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Latex</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>ML & Data Analysis</h3>
+                <ul class="skill-list">
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                    <li>Matplotlib</li>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks & Runtime</h3>
+                <ul class="skill-list">
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>SvelteJS</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Databases & Cloud</h3>
+                <ul class="skill-list">
+                    <li>PostgreSQL</li>
+                    <li>Oracle</li>
+                    <li>Vercel</li>
+                    <li>Supabase</li>
+                    <li>Azure</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Development Tools</h3>
+                <ul class="skill-list">
+                    <li>Git / Github / Github Projects</li>
+                    <li>Linux OS</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Security Tools</h3>
+                <ul class="skill-list">
+                    <li>Velociraptor</li>
+                    <li>Wireshark</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer>
         <hr>
-        <p>© 2025 Sadif Ahmed | Built with ❤️</p>
+        <p>© 2025 Sadif Ahmed</p>
     </footer>
 </body>
 </html>

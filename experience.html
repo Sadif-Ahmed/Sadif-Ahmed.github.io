@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadif Ahmed | Experience</title>
+    <title>Sadif Ahmed | Experience & Research</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        nav a { margin-right: 15px; }
+        /* Helper styles for the academic layout */
+        .job-entry, .research-entry { 
+            margin-bottom: 30px; 
+            padding-left: 15px;
+            border-left: 3px solid #e0e0e0; /* Subtle vertical timeline/separator */
+        }
+        .research-entry h3 {
+            margin-bottom: 0;
+            border-bottom: none; /* Remove line under project title */
+            color: #004d99;
+        }
+        .research-meta { 
+            font-style: italic; 
+            color: #666666;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .contribution-list {
+            list-style: none; /* Remove bullet */
+            padding-left: 0;
+        }
+        .contribution-list li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .contribution-list li::before {
+            content: "»"; /* Use an academic marker */
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .tech-stack {
+            font-size: 0.9em;
+            color: #777777;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -23,45 +61,78 @@
     </header>
 
     <section>
-        <h2>Professional Experience</h2>
+        <h2>👨‍🏫 Professional Experience</h2>
         
-        <h3>Lecturer, CSE Department, BRAC University</h3>
-        <p>July 2025 – Present</p>
-        <ul>
-            <li>Teaching Computer Architecture and Software Engineering.</li>
-        </ul>
+        <div class="job-entry">
+            <h3>Lecturer, CSE Department, BRAC University</h3>
+            <p><strong>July 2025 – Present</strong>, Dhaka, Bangladesh</p>
+            <ul class="contribution-list">
+                <li>Courses Taught: Computer Architecture and Software Engineering.</li>
+            </ul>
+        </div>
 
-        <h3>Research Assistant, CSE Department, BUET</h3>
-        <p>March 2025 – June 2025</p>
-        <ul>
-            <li>Engaged in researching Web UI Testing Automation.</li>
-            <li>Explored WebUI Gyms such as WebArena and worked on an end-to-end pipeline to generate UI test cases from user stories.</li>
-        </ul>
+        <div class="job-entry">
+            <h3>Research Assistant, CSE Department, BUET</h3>
+            <p><strong>March 2025 – June 2025</strong>, Dhaka, Bangladesh</p>
+            <ul class="contribution-list">
+                <li>Explored WebUI Gyms such as WebArena for UI Testing Automation.</li>
+                <li>Worked on creating an end-to-end pipeline to generate Playwright testing scripts from user stories of a website.</li>
+            </ul>
+        </div>
     </section>
 
     <section>
-        <h2>Research Experience</h2>
+        <h2>🔬 Research Experience & Publications</h2>
+        <p class="research-meta">Focused on Software Engineering, LLMs, and Security. All key contributions are validated with state-of-the-art comparisons.</p>
 
-        <h3>Secret Breach Detection in Source Code with Large Language Models</h3>
-        <p>October 2024 - July 2025 | Undergraduate Thesis, ESEM 2025 Technical Track Publication</p>
-        <p>Introduced a novel approach for Secret Breach Detection using a Small Language Model (SLM) fine-tuned with QLORA. The model demonstrably outperforms SOTA regex-based tools (like Trufflehog) and large, general-purpose LLMs (like GPT-40).</p>
-        
-        <h3>Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation</h3>
-        <p>July 2024 - October 2025 | Undergraduate Thesis, Under Review in MSR 2026, ArXiv</p>
-        <p>Presented the first large-scale study and a robust hybrid detection pipeline (regex + LLM classification). Curated and released the first public benchmark dataset (54,000+ labeled instances).</p>
-        
-        <h3>A Survey on Agentic Security: Applications, Threats and Defenses</h3>
-        <p>August 2025 - October 2025 | Under Review in ACL Rolling Review, ArXiv</p>
-        <p>First holistic survey of the rapidly evolving agentic security landscape, analyzing over 150 papers published primarily between 2024-2025.</p>
+        <div class="research-entry">
+            <h3>Secret Breach Detection in Source Code with Large Language Models</h3>
+            <span class="research-meta">October 2024 - July 2025 | Undergraduate Thesis, ESEM 2025 Technical Track Publication</span>
+            <ul class="contribution-list">
+                <li>Introduced a novel approach for Secret Breach Detection using a Small Language Model (SLM) fine-tuned with QLORA.</li>
+                <li>Model demonstrably outperforms several established state-of-the-art regex-based tools (like Trufflehog) and large, general-purpose LLMs (like GPT-40).</li>
+                <li>Supervisor: Dr. Rifat Shahriyar, Professor, CSE, BUET.</li>
+            </ul>
+            <p class="tech-stack">Technology & Tools: QLORA, DeepSeek-7B, Gemma-7B, LLAMA-3.1-8B, Mistral-7B, DeepSeek-V3, GPT-40.</p>
+        </div>
 
-        <h3>BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation</h3>
-        <p>August 2025 - September 2025 | Workshop co-located with IJCNLP-AACL 2025</p>
-        <p>Novel framework for generating executable code from Bangla descriptions using a retrieval-augmented dual-model collaboration paradigm with iterative self-refinement.</p>
+        <div class="research-entry">
+            <h3>Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation</h3>
+            <span class="research-meta">July 2024 - October 2025 | Undergraduate Thesis, Under Review in MSR 2026, ArXiv</span>
+            <ul class="contribution-list">
+                <li>Presented the first large-scale study and a robust hybrid detection pipeline for secret leaks in GitHub issue reports.</li>
+                <li>Curated and released the first public benchmark dataset of over 54,000 labeled instances.</li>
+                <li>Demonstrated fine-tuned LLMs achieve state-of-the-art performance (up to 0.945 F1).</li>
+                <li>Supervisors: Dr. Rifat Shahriyar (BUET); Dr. Gias Uddin (York University).</li>
+            </ul>
+            <p class="tech-stack">Technology & Tools: Small Language Models (RoBERTa, BERT, CodeBERT), QLORA, PEFT, GPT-40, Gemini-2.0-Flash.</p>
+        </div>
+
+        <div class="research-entry">
+            <h3>A Survey on Agentic Security: Applications, Threats and Defenses</h3>
+            <span class="research-meta">August 2025 - October 2025 | Independent Research Group, Under Review in ACL Rolling Review, ArXiv</span>
+            <ul class="contribution-list">
+                <li>Presented the first holistic survey of the rapidly evolving agentic security landscape, analyzing over 150 papers (2024-2025).</li>
+                <li>Provided a unified framework by structuring the field around three interdependent pillars: Applications, Threats, and Defenses.</li>
+                <li>Supervisors: Dr. Farig Sadeque (BRAC University); Dr. Md Rizwan Parvez (QCRI).</li>
+            </ul>
+        </div>
+
+        <div class="research-entry">
+            <h3>BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation</h3>
+            <span class="research-meta">August 2025 - September 2025 | Independent Research Group, Workshop co-located with IJCNLP-AACL 2025</span>
+            <ul class="contribution-list">
+                <li>Introduced a novel framework for generating executable code from Bangla descriptions.</li>
+                <li>Utilizes a retrieval-augmented dual-model collaboration paradigm with iterative self-refinement based on execution feedback.</li>
+                <li>Achieved a competitive Pass@1 accuracy of 84.00% on the BLP-2025 benchmark.</li>
+            </ul>
+            <p class="tech-stack">Technology & Tools: Dual-LLM architecture, Retrieval-Augmented few-shot prompting, Gemini-2.5-Pro.</p>
+        </div>
     </section>
 
     <footer>
         <hr>
-        <p>© 2025 Sadif Ahmed | Built with ❤️</p>
+        <p>© 2025 Sadif Ahmed</p>
     </footer>
 </body>
 </html>

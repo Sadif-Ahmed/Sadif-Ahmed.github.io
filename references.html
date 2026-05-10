@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sadif Ahmed | References</title>
+  <meta name="description" content="Academic and professional references for Sadif Ahmed."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="cv_viewer.html">CV</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-label">People</div>
+      <h1 class="section-title">References</h1>
+      <p style="color:var(--text2);margin-bottom:36px;font-size:.93rem">
+        Academic and professional references who can speak to my research and work.
+      </p>
+
+      <div class="ref-grid">
+
+        <div class="ref-card reveal">
+          <div style="font-size:2rem;margin-bottom:10px">👨‍🏫</div>
+          <div class="ref-name">Dr. Rifat Shahriyar</div>
+          <div class="ref-role">Professor, CSE Department — BUET</div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+            <a href="mailto:rifat.shahriyar@gmail.com" class="ref-email">✉ rifat.shahriyar@gmail.com</a>
+            <a href="mailto:rifat@cse.buet.ac.bd" class="ref-email">✉ rifat@cse.buet.ac.bd</a>
+          </div>
+          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-p">Secret Breach Detection</span>
+            <span class="tag tag-p">Secret Leak Detection</span>
+            <span class="tag tag-p">ISSUEGUARD</span>
+          </div>
+        </div>
+
+        <div class="ref-card reveal">
+          <div style="font-size:2rem;margin-bottom:10px">🔬</div>
+          <div class="ref-name">Dr. Md Rizwan Parvez</div>
+          <div class="ref-role">Scientist — QCRI</div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+            <a href="mailto:rizwan@ucla.edu" class="ref-email">✉ rizwan@ucla.edu</a>
+            <a href="mailto:rizwan.incipient@gmail.com" class="ref-email">✉ rizwan.incipient@gmail.com</a>
+          </div>
+          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-s">Agentic Security Survey</span>
+          </div>
+        </div>
+
+        <div class="ref-card reveal">
+          <div style="font-size:2rem;margin-bottom:10px">🏫</div>
+          <div class="ref-name">Dr. Farig Sadeque</div>
+          <div class="ref-role">Associate Professor — BRAC University</div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+            <a href="mailto:farig.sadeque@bracu.ac.bd" class="ref-email">✉ farig.sadeque@bracu.ac.bd</a>
+          </div>
+          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-s">Agentic Security Survey</span>
+          </div>
+        </div>
+
+        <div class="ref-card reveal">
+          <div style="font-size:2rem;margin-bottom:10px">🌐</div>
+          <div class="ref-name">Dr. S M Sohan</div>
+          <div class="ref-role">Sr. Engineering Manager — Google LLC</div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+            <a href="mailto:sohansm@google.com" class="ref-email">✉ sohansm@google.com</a>
+          </div>
+          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-a">Secret Breach Detection</span>
+          </div>
+        </div>
+
+        <div class="ref-card reveal">
+          <div style="font-size:2rem;margin-bottom:10px">🎓</div>
+          <div class="ref-name">Dr. Gias Uddin</div>
+          <div class="ref-role">Associate Professor — York University</div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+            <span class="ref-email" style="color:var(--text3)">Contact via institution</span>
+          </div>
+          <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-a">Secret Leak Detection</span>
+            <span class="tag tag-a">ISSUEGUARD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+</footer>
+
+<script>
+  const btn=document.getElementById('theme-toggle');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('sa-theme')||'dark';
+  html.setAttribute('data-theme',saved);
+  upBtn(saved);
+  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
+  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
+  const cur=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

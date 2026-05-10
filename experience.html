@@ -1,138 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadif Ahmed | Experience & Research</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        /* Helper styles for the academic layout */
-        .job-entry, .research-entry { 
-            margin-bottom: 30px; 
-            padding-left: 15px;
-            border-left: 3px solid #e0e0e0; /* Subtle vertical timeline/separator */
-        }
-        .research-entry h3 {
-            margin-bottom: 0;
-            border-bottom: none; /* Remove line under project title */
-            color: #004d99;
-        }
-        .research-meta { 
-            font-style: italic; 
-            color: #666666;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            display: block;
-        }
-        .contribution-list {
-            list-style: none; /* Remove bullet */
-            padding-left: 0;
-        }
-        .contribution-list li {
-            margin-bottom: 8px;
-            padding-left: 15px;
-            position: relative;
-        }
-        .contribution-list li::before {
-            content: "»"; /* Use an academic marker */
-            position: absolute;
-            left: 0;
-            color: #0066cc;
-            font-weight: bold;
-        }
-        .tech-stack {
-            font-size: 0.9em;
-            color: #777777;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sadif Ahmed | Research &amp; Publications</title>
+  <meta name="description" content="Research experience and publications of Sadif Ahmed — Software Engineering, LLMs, and AI Security."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience & Research</a>
-            <a href="education.html">Education & Honors</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="cv_viewer.html">CV</a>
-        </nav>
-        <h1>Professional & Research Experience</h1>
-    </header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="cv_viewer.html">CV</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+  </div>
+</nav>
 
-    <section>
-        <h2>👨‍🏫 Professional Experience</h2>
-        
-        <div class="job-entry">
-            <h3>Lecturer, CSE Department, BRAC University</h3>
-            <p><strong>July 2025 – Present</strong>, Dhaka, Bangladesh</p>
-            <ul class="contribution-list">
-                <li>Courses Taught: Computer Architecture and Software Engineering.</li>
-            </ul>
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h1 class="section-title">Professional Experience</h1>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+              <h2 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">Lecturer, CSE Department</h2>
+              <span class="tag tag-s">July 2025 – Present</span>
+            </div>
+            <p style="color:var(--secondary);font-size:.85rem;margin-bottom:10px">BRAC University, Dhaka, Bangladesh</p>
+            <p style="color:var(--text2);font-size:.9rem;margin-bottom:8px">Courses Taught:</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <span class="tag tag-p">Computer Architecture</span>
+              <span class="tag tag-p">Software Engineering</span>
+            </div>
+          </div>
         </div>
 
-        <div class="job-entry">
-            <h3>Research Assistant, CSE Department, BUET</h3>
-            <p><strong>March 2025 – June 2025</strong>, Dhaka, Bangladesh</p>
-            <ul class="contribution-list">
-                <li>Explored WebUI Gyms such as WebArena for UI Testing Automation.</li>
-                <li>Worked on creating an end-to-end pipeline to generate Playwright testing scripts from user stories of a website.</li>
+        <div class="timeline-item reveal">
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+              <h2 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">Research Assistant, CSE Department</h2>
+              <span class="tag tag-a">March 2025 – Present</span>
+            </div>
+            <p style="color:var(--secondary);font-size:.85rem;margin-bottom:12px">Bangladesh University of Engineering &amp; Technology (BUET), Dhaka, Bangladesh</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+              <li style="color:var(--text2);font-size:.88rem;padding-left:16px;position:relative">
+                <span style="position:absolute;left:0;color:var(--primary)">›</span>
+                Explored WebUI Gyms such as <strong style="color:var(--text)">WebArena</strong> and worked on a UI Testing Automation Pipeline.
+              </li>
+              <li style="color:var(--text2);font-size:.88rem;padding-left:16px;position:relative">
+                <span style="position:absolute;left:0;color:var(--primary)">›</span>
+                Built an end-to-end pipeline to generate <strong style="color:var(--text)">Playwright</strong> testing scripts from website user stories.
+              </li>
+              <li style="color:var(--text2);font-size:.88rem;padding-left:16px;position:relative">
+                <span style="position:absolute;left:0;color:var(--primary)">›</span>
+                Building and fine-tuning a bilingual (Bangla/English) <strong style="color:var(--text)">vision-language model</strong> with Socratic prompts and step-by-step scaffolding.
+              </li>
+              <li style="color:var(--text2);font-size:.88rem;padding-left:16px;position:relative">
+                <span style="position:absolute;left:0;color:var(--primary)">›</span>
+                Implementing personalized <strong style="color:var(--text)">student modeling</strong> with knowledge tracing and bilingual hinting for adaptive learning.
+              </li>
             </ul>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section>
-        <h2>🔬 Research Experience & Publications</h2>
-        <p class="research-meta">Focused on Software Engineering, LLMs, and Security. All key contributions are validated with state-of-the-art comparisons.</p>
+      <div class="section-label" style="margin-top:60px">Publications</div>
+      <h2 class="section-title">Research Experience</h2>
 
-        <div class="research-entry">
-            <h3>Secret Breach Detection in Source Code with Large Language Models</h3>
-            <span class="research-meta">October 2024 - July 2025 | Undergraduate Thesis, ESEM 2025 Technical Track Publication</span>
-            <ul class="contribution-list">
-                <li>Introduced a novel approach for Secret Breach Detection using a Small Language Model (SLM) fine-tuned with QLORA.</li>
-                <li>Model demonstrably outperforms several established state-of-the-art regex-based tools (like Trufflehog) and large, general-purpose LLMs (like GPT-40).</li>
-                <li>Supervisor: Dr. Rifat Shahriyar, Professor, CSE, BUET.</li>
-            </ul>
-            <p class="tech-stack">Technology & Tools: QLORA, DeepSeek-7B, Gemma-7B, LLAMA-3.1-8B, Mistral-7B, DeepSeek-V3, GPT-40.</p>
+      <!-- Paper 1 -->
+      <div class="card research-card reveal" style="margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:10px">
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text);flex:1">
+            Secret Breach Detection in Source Code with Large Language Models
+          </h3>
         </div>
-
-        <div class="research-entry">
-            <h3>Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation</h3>
-            <span class="research-meta">July 2024 - October 2025 | Undergraduate Thesis, Under Review in MSR 2026, ArXiv</span>
-            <ul class="contribution-list">
-                <li>Presented the first large-scale study and a robust hybrid detection pipeline for secret leaks in GitHub issue reports.</li>
-                <li>Curated and released the first public benchmark dataset of over 54,000 labeled instances.</li>
-                <li>Demonstrated fine-tuned LLMs achieve state-of-the-art performance (up to 0.945 F1).</li>
-                <li>Supervisors: Dr. Rifat Shahriyar (BUET); Dr. Gias Uddin (York University).</li>
-            </ul>
-            <p class="tech-stack">Technology & Tools: Small Language Models (RoBERTa, BERT, CodeBERT), QLORA, PEFT, GPT-40, Gemini-2.0-Flash.</p>
+        <div class="meta-row">
+          <span class="badge badge-pub">✓ ESEM 2025 – Technical Track</span>
+          <span class="tag" style="color:var(--text3)">Oct 2024 – Jul 2025</span>
+          <span class="tag tag-a">Undergraduate Thesis</span>
         </div>
-
-        <div class="research-entry">
-            <h3>A Survey on Agentic Security: Applications, Threats and Defenses</h3>
-            <span class="research-meta">August 2025 - October 2025 | Independent Research Group, Under Review in ACL Rolling Review, ArXiv</span>
-            <ul class="contribution-list">
-                <li>Presented the first holistic survey of the rapidly evolving agentic security landscape, analyzing over 150 papers (2024-2025).</li>
-                <li>Provided a unified framework by structuring the field around three interdependent pillars: Applications, Threats, and Defenses.</li>
-                <li>Supervisors: Dr. Farig Sadeque (BRAC University); Dr. Md Rizwan Parvez (QCRI).</li>
-            </ul>
+        <p class="contribution">
+          Introduced a novel approach for Secret Breach Detection using a Small Language Model (SLM) fine-tuned with QLoRA.
+          Our model outperforms state-of-the-art regex tools (Trufflehog) and large LLMs (GPT-4o) on the SecretBench dataset,
+          demonstrating the efficacy of compact specialized models over zero-shot giants.
+        </p>
+        <div class="tags-row">
+          <span class="tag tag-p">QLoRA</span>
+          <span class="tag tag-p">DeepSeek-7B</span>
+          <span class="tag tag-p">Gemma-7B</span>
+          <span class="tag tag-p">LLaMA-3.1-8B</span>
+          <span class="tag tag-p">Mistral-7B</span>
+          <span class="tag tag-p">DeepSeek-V3</span>
+          <span class="tag tag-p">GPT-4o</span>
         </div>
-
-        <div class="research-entry">
-            <h3>BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation</h3>
-            <span class="research-meta">August 2025 - September 2025 | Independent Research Group, Workshop co-located with IJCNLP-AACL 2025</span>
-            <ul class="contribution-list">
-                <li>Introduced a novel framework for generating executable code from Bangla descriptions.</li>
-                <li>Utilizes a retrieval-augmented dual-model collaboration paradigm with iterative self-refinement based on execution feedback.</li>
-                <li>Achieved a competitive Pass@1 accuracy of 84.00% on the BLP-2025 benchmark.</li>
-            </ul>
-            <p class="tech-stack">Technology & Tools: Dual-LLM architecture, Retrieval-Augmented few-shot prompting, Gemini-2.5-Pro.</p>
+        <p class="supervisor">Supervisors: Dr. Rifat Shahriyar (Prof., CSE, BUET) · Dr. S M Sohan (Sr. Eng. Manager, Google LLC)</p>
+        <div class="card-links">
+          <a href="https://conf.researchr.org/details/esem-2025/esem-2025-technical-track/8/Secret-Breach-Detection-in-Source-Code-with-Large-Language-Models" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 ESEM 2025 Paper</a>
         </div>
-    </section>
+      </div>
 
-    <footer>
-        <hr>
-        <p>© 2025 Sadif Ahmed</p>
-    </footer>
+      <!-- Paper 2 -->
+      <div class="card research-card reveal" style="margin-bottom:24px">
+        <div style="margin-bottom:10px">
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+            Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation
+          </h3>
+        </div>
+        <div class="meta-row">
+          <span class="badge badge-pub">✓ MSR 2026 – Technical Track</span>
+          <span class="badge badge-arx">ArXiv</span>
+          <span class="tag" style="color:var(--text3)">Jul 2024 – Oct 2025</span>
+          <span class="tag tag-a">Undergraduate Thesis</span>
+        </div>
+        <p class="contribution">
+          First large-scale study and hybrid detection pipeline for secret leaks in GitHub issue reports.
+          Integrates regex-based extraction with LLM contextual classification to reduce false positives.
+          Curated and released the first public benchmark of 54,000+ labeled instances. Fine-tuned LLMs achieve up to 0.945 F1.
+        </p>
+        <div class="tags-row">
+          <span class="tag tag-p">RoBERTa</span>
+          <span class="tag tag-p">BERT</span>
+          <span class="tag tag-p">CodeBERT</span>
+          <span class="tag tag-p">QLoRA</span>
+          <span class="tag tag-p">PEFT</span>
+          <span class="tag tag-p">GPT-4o</span>
+          <span class="tag tag-p">Gemini-2.0-Flash</span>
+          <span class="tag tag-p">DeepSeek-7B</span>
+          <span class="tag tag-p">Gemma-7B</span>
+          <span class="tag tag-p">Qwen-7B</span>
+        </div>
+        <p class="supervisor">Supervisors: Dr. Rifat Shahriyar (Prof., CSE, BUET) · Dr. Gias Uddin (Assoc. Prof., York University)</p>
+        <div class="card-links">
+          <a href="https://2026.msrconf.org/details/msr-2026-technical-papers/15/Secret-Leak-Detection-in-Software-Issue-Reports-using-LLMs-A-Comprehensive-Evaluatio" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 MSR 2026 Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 3 -->
+      <div class="card research-card reveal" style="margin-bottom:24px">
+        <div style="margin-bottom:10px">
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+            A Survey on Agentic Security: Applications, Threats and Defenses
+          </h3>
+        </div>
+        <div class="meta-row">
+          <span class="badge badge-arx">ArXiv Preprint</span>
+          <span class="tag" style="color:var(--text3)">Aug 2025 – Oct 2025</span>
+          <span class="tag tag-h">Independent Research</span>
+        </div>
+        <p class="contribution">
+          First holistic survey of the rapidly evolving agentic security landscape, systematically analyzing 150+ papers (2024–2025).
+          Structures the field around three interdependent pillars: Applications, Threats, and Defenses —
+          providing a unified framework for understanding LLM agent capabilities and vulnerabilities in cybersecurity.
+        </p>
+        <p class="supervisor">Supervisors: Dr. Farig Sadeque (Assoc. Prof., BRAC University) · Dr. Md Rizwan Parvez (Scientist, QCRI)</p>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2602.08072" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 ArXiv</a>
+        </div>
+      </div>
+
+      <!-- Paper 4 -->
+      <div class="card research-card reveal" style="margin-bottom:24px">
+        <div style="margin-bottom:10px">
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+            BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation
+          </h3>
+        </div>
+        <div class="meta-row">
+          <span class="badge badge-acc">✓ BLP Workshop @ AACL-IJCNLP 2025 (ACL Anthology)</span>
+          <span class="tag" style="color:var(--text3)">Aug – Sep 2025</span>
+          <span class="tag tag-h">Independent Research</span>
+        </div>
+        <p class="contribution">
+          BanglaForge: a novel framework for generating executable code from Bangla descriptions (a low-resource language).
+          Employs retrieval-augmented dual-model collaboration with iterative self-refinement based on execution feedback.
+          Achieves 84.00% Pass@1 on the BLP-2025 Bangla Code Generation benchmark.
+        </p>
+        <div class="tags-row">
+          <span class="tag tag-p">Dual-LLM Architecture</span>
+          <span class="tag tag-p">RAG Few-shot</span>
+          <span class="tag tag-p">TF-IDF</span>
+          <span class="tag tag-p">Lg Exaone Deep 32B</span>
+          <span class="tag tag-p">Gemini-2.5-Pro</span>
+        </div>
+        <p class="supervisor">Collaborators: Mahir Labib Dihan (Lecturer, BRACU) · Md Nafiu Rahman (Lecturer, BRACU)</p>
+        <div class="card-links">
+          <a href="https://aclanthology.org/2025.banglalp-1.66/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 ACL Anthology</a>
+        </div>
+      </div>
+
+      <!-- Paper 5 -->
+      <div class="card research-card reveal" style="margin-bottom:24px">
+        <div style="margin-bottom:10px">
+          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+            ISSUEGUARD: Real-Time Secret Leak Prevention Tool for GitHub Issue Reports
+          </h3>
+        </div>
+        <div class="meta-row">
+          <span class="badge badge-pub">✓ FSE 2026 – Tool Demo Track</span>
+          <span class="badge badge-arx">ArXiv</span>
+          <span class="tag" style="color:var(--text3)">Oct 2025 – Feb 2026</span>
+          <span class="tag tag-a">Undergraduate Thesis</span>
+        </div>
+        <p class="contribution">
+          Browser-based security tool providing real-time feedback to prevent accidental secret leaks in GitHub issue reports.
+          Hybrid detection engine (Regex + Fine-tuned CodeBERT) achieves 92.70% F1-score with &lt;200ms end-to-end latency.
+          User study with 50 developers — 80% reported "Very High Confidence" in detection capabilities.
+        </p>
+        <div class="tags-row">
+          <span class="tag tag-p">Chrome Extension (MV3)</span>
+          <span class="tag tag-p">JavaScript</span>
+          <span class="tag tag-p">FastAPI</span>
+          <span class="tag tag-p">CodeBERT</span>
+          <span class="tag tag-p">PyTorch</span>
+          <span class="tag tag-p">FP16 Inference</span>
+          <span class="tag tag-p">LRU Cache</span>
+        </div>
+        <p class="supervisor">Supervisors: Dr. Rifat Shahriyar (Prof., CSE, BUET) · Dr. Gias Uddin (Assoc. Prof., York University)</p>
+        <div class="card-links">
+          <a href="http://arxiv.org/abs/2510.06445" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 ArXiv</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+</footer>
+
+<script>
+  const btn=document.getElementById('theme-toggle');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('sa-theme')||'dark';
+  html.setAttribute('data-theme',saved);
+  upBtn(saved);
+  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
+  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
+  const cur=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>

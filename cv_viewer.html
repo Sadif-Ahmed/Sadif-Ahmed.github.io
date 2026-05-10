@@ -1,89 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadif Ahmed | View CV</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Custom styles for this page, inheriting base styles from style.css */
-        
-        /* Override body styles for the CV viewer page to remove the main content box effect */
-        body {
-            padding: 0;
-            text-align: center;
-            background-color: #f7f7f7; /* Use the light gray background */
-        }
-        
-        /* Style the header area to match the rest of the site */
-        header {
-            padding: 20px 20px 0 20px; /* Reduce bottom padding */
-            max-width: 100%; /* Header spans full width for nav */
-            margin: auto;
-            background-color: #ffffff;
-            box-shadow: none; /* Remove shadow to separate from content */
-        }
-        
-        /* Ensure the main heading is styled correctly */
-        h1 {
-            color: #004d99;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            border-bottom: 2px solid #004d99;
-            padding-bottom: 10px;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        /* Container for the PDF */
-        #pdf-container {
-            width: 90%; /* Use wider container for the document view */
-            height: 85vh; /* Larger view area */
-            margin: 20px auto;
-            border: 1px solid #e0e0e0; /* Clean, light border */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Nav links are styled in style.css, but we use the header/nav structure */
-        nav {
-            padding-bottom: 20px;
-        }
-        nav a { 
-            margin: 0 10px; 
-            text-transform: uppercase;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sadif Ahmed | Curriculum Vitae</title>
+  <meta name="description" content="View and download the CV of Sadif Ahmed."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience & Research</a>
-            <a href="education.html">Education & Honors</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="cv_viewer.html">CV</a>
-        </nav>
-        <h1>Curriculum Vitae</h1>
-    </header>
-    
-    <div id="pdf-container">
-        <iframe src="assets/Sadif_Ahmed_CV.pdf" title="Sadif Ahmed's Academic CV" loading="lazy">
-            <p>Your browser does not support iframes. You can <a href="assets/Resume_Academia.pdf" target="_blank">download the CV</a> instead.</p>
-        </iframe>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="cv_viewer.html">CV</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="section" style="padding-bottom:20px">
+    <div class="container">
+      <div class="section-label">Document</div>
+      <h1 class="section-title">Curriculum Vitae</h1>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px">
+        <a href="assets/Sadif_Ahmed_CV.pdf" download class="btn btn-primary">⬇ Download PDF</a>
+        <a href="assets/Sadif_Ahmed_CV.pdf" target="_blank" rel="noopener" class="btn btn-outline">↗ Open in New Tab</a>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <hr>
-        <p>© 2025 Sadif Ahmed</p>
-    </footer>
+  <div id="pdf-container">
+    <iframe src="assets/Sadif_Ahmed_CV.pdf" title="Sadif Ahmed Academic CV" loading="lazy">
+      <p>Your browser does not support iframes.
+        <a href="assets/Sadif_Ahmed_CV.pdf" target="_blank">Download the CV</a> instead.
+      </p>
+    </iframe>
+  </div>
+</main>
 
+<footer class="footer" style="margin-top:32px">
+  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+</footer>
+
+<script>
+  const btn=document.getElementById('theme-toggle');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('sa-theme')||'dark';
+  html.setAttribute('data-theme',saved);
+  upBtn(saved);
+  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
+  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
+  const cur=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
+</script>
 </body>
 </html>

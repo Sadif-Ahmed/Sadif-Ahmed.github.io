@@ -1,139 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadif Ahmed | Skills</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        /* Helper styles for the skills page */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Default to single column */
-            gap: 20px 30px;
-        }
-        @media (min-width: 600px) {
-            .skills-grid {
-                grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
-            }
-        }
-        .skill-category {
-            padding: 15px;
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
-            background-color: #fcfcfc;
-        }
-        .skill-category h3 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #eeeeee; /* Light separator line */
-            padding-bottom: 5px;
-            color: #004d99; /* Deep blue accent */
-        }
-        .skill-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-size: 0.95em;
-        }
-        .skill-list li {
-            margin-bottom: 6px;
-            padding-left: 15px;
-            position: relative;
-        }
-        .skill-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #0066cc;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sadif Ahmed | Technical Skills</title>
+  <meta name="description" content="Technical skills and competencies of Sadif Ahmed — Programming, ML, Web Development, Security."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience & Research</a>
-            <a href="education.html">Education & Honors</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="cv_viewer.html">CV</a>
-        </nav>
-        <h1>Technical Skills</h1>
-    </header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="cv_viewer.html">CV</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+  </div>
+</nav>
 
-    <section>
-        <h2>🛠 Core Technical Competencies</h2>
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Competencies</div>
+      <h1 class="section-title">Technical Skills</h1>
+      <div class="skills-grid">
 
-        <div class="skills-grid">
-
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <ul class="skill-list">
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>Latex</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>ML & Data Analysis</h3>
-                <ul class="skill-list">
-                    <li>TensorFlow</li>
-                    <li>PyTorch</li>
-                    <li>Matplotlib</li>
-                    <li>NumPy</li>
-                    <li>Pandas</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>Frameworks & Runtime</h3>
-                <ul class="skill-list">
-                    <li>NodeJS</li>
-                    <li>ExpressJS</li>
-                    <li>SvelteJS</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Databases & Cloud</h3>
-                <ul class="skill-list">
-                    <li>PostgreSQL</li>
-                    <li>Oracle</li>
-                    <li>Vercel</li>
-                    <li>Supabase</li>
-                    <li>Azure</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>Development Tools</h3>
-                <ul class="skill-list">
-                    <li>Git / Github / Github Projects</li>
-                    <li>Linux OS</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Security Tools</h3>
-                <ul class="skill-list">
-                    <li>Velociraptor</li>
-                    <li>Wireshark</li>
-                </ul>
-            </div>
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">💻 Languages</div>
+          <div class="skill-pills">
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">LaTeX</span>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <hr>
-        <p>© 2025 Sadif Ahmed</p>
-    </footer>
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🧠 ML &amp; AI</div>
+          <div class="skill-pills">
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">QLoRA / PEFT</span>
+            <span class="skill-pill">HuggingFace</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">Matplotlib</span>
+            <span class="skill-pill">Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🌐 Web &amp; Frameworks</div>
+          <div class="skill-pills">
+            <span class="skill-pill">NodeJS</span>
+            <span class="skill-pill">ExpressJS</span>
+            <span class="skill-pill">SvelteJS</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Playwright</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🗄️ Databases &amp; Cloud</div>
+          <div class="skill-pills">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Oracle</span>
+            <span class="skill-pill">Supabase</span>
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">Azure</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🛠️ DevTools</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🔒 Security Tools</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Velociraptor</span>
+            <span class="skill-pill">Wireshark</span>
+            <span class="skill-pill">Chrome Extension (MV3)</span>
+            <span class="skill-pill">Socket Programming</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🤖 LLMs Used</div>
+          <div class="skill-pills">
+            <span class="skill-pill">GPT-4o</span>
+            <span class="skill-pill">Gemini-2.5-Pro</span>
+            <span class="skill-pill">DeepSeek-7B</span>
+            <span class="skill-pill">LLaMA-3.1-8B</span>
+            <span class="skill-pill">Gemma-7B</span>
+            <span class="skill-pill">Mistral-7B</span>
+            <span class="skill-pill">CodeBERT</span>
+            <span class="skill-pill">RoBERTa</span>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-title">🌐 Network &amp; Systems</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Cisco Packet Tracer</span>
+            <span class="skill-pill">NS3</span>
+            <span class="skill-pill">VLAN / NAT / ACL</span>
+            <span class="skill-pill">xv6 OS</span>
+            <span class="skill-pill">Assembly</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+</footer>
+
+<script>
+  const btn=document.getElementById('theme-toggle');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('sa-theme')||'dark';
+  html.setAttribute('data-theme',saved);
+  upBtn(saved);
+  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
+  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
+  const cur=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>

@@ -1,120 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadif Ahmed | Education</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        /* Helper styles to support the academic aesthetic (moved here for cleanup) */
-        .education-entry {
-            margin-bottom: 30px;
-            padding: 15px;
-            border-left: 4px solid #004d99; /* Strong blue line for primary education */
-            background-color: #fcfcfc;
-        }
-        .education-entry h3 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            border-bottom: none;
-            color: #004d99;
-        }
-        .education-meta {
-            color: #666666;
-            font-size: 0.95em;
-            margin-bottom: 5px;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #000000;
-        }
-        .coursework-list {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
-            margin-top: 15px;
-        }
-        .coursework-list li {
-            background-color: #eeeeee;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            padding: 5px 10px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            font-size: 0.9em;
-            color: #444444;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-        /* Assuming contribution-list is defined in style.css or copied from previous responses */
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sadif Ahmed | Education &amp; Honors</title>
+  <meta name="description" content="Education background and academic achievements of Sadif Ahmed."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience & Research</a>
-            <a href="education.html">Education & Honors</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="cv_viewer.html">CV</a>
-        </nav>
-        <h1>Education & Honors</h1>
-    </header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="cv_viewer.html">CV</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+  </div>
+</nav>
 
-    <section>
-        <h2>🎓 Education</h2>
-        
-        <div class="education-entry">
-            <h3>B.Sc. Computer Science</h3>
-            <p class="education-meta">Bangladesh University of Engineering & Technology (BUET), Dhaka, Bangladesh</p>
-            <p class="education-meta"><strong>Feb 2020 – March 2025</strong></p>
-            <p>
-                <span class="highlight">Overall CGPA: 3.83 out of 4.00</span> | 
-                <span class="highlight">Final Year: 3.96/4.00</span>
-            </p>
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Academic Background</div>
+      <h1 class="section-title">Education</h1>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="card">
+            <div class="edu-card">
+              <div class="edu-icon">🎓</div>
+              <div class="edu-body">
+                <div class="edu-inst">Bangladesh University of Engineering &amp; Technology (BUET)</div>
+                <div class="edu-deg">B.Sc. Computer Science</div>
+                <div class="edu-meta">Dhaka, Bangladesh · Feb 2020 – March 2025</div>
+                <div class="edu-highlight">CGPA: 3.83 / 4.00 · Final Year: 3.96 / 4.00</div>
+                <div style="margin-top:14px">
+                  <div style="font-family:var(--fm);font-size:.72rem;color:var(--text3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Related Coursework</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:7px">
+                    <span class="tag">Structured Programming (C)</span>
+                    <span class="tag">Data Structures &amp; Algorithms (C++)</span>
+                    <span class="tag">OOP (C++, Java)</span>
+                    <span class="tag">Software Engineering (Java)</span>
+                    <span class="tag">Database (SQL)</span>
+                    <span class="tag">Machine Learning (Python)</span>
+                    <span class="tag">Computer Architecture</span>
+                    <span class="tag">Information Systems Design</span>
+                    <span class="tag">Numerical Methods (Python)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="education-entry">
-            <h3>Higher Secondary School Certificate (HSC)</h3>
-            <p class="education-meta">Notre Dame College, Dhaka, Bangladesh</p>
-            <p class="education-meta">Jan 2017 – Jan 2019 | <span class="highlight">GPA: 5 out of 5</span></p>
+
+        <div class="timeline-item reveal">
+          <div class="card">
+            <div class="edu-card">
+              <div class="edu-icon">📚</div>
+              <div class="edu-body">
+                <div class="edu-inst">Notre Dame College</div>
+                <div class="edu-deg">Higher Secondary School Certificate (HSC)</div>
+                <div class="edu-meta">Dhaka, Bangladesh · Jan 2017 – Jan 2019</div>
+                <div class="edu-highlight">GPA: 5.00 / 5.00</div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="education-entry">
-            <h3>Secondary School Certificate (SSC)</h3>
-            <p class="education-meta">St. Joseph High School, Dhaka, Bangladesh</p>
-            <p class="education-meta">Jan 2009 – Dec 2016 | <span class="highlight">GPA: 5 out of 5</span></p>
+        <div class="timeline-item reveal">
+          <div class="card">
+            <div class="edu-card">
+              <div class="edu-icon">🏫</div>
+              <div class="edu-body">
+                <div class="edu-inst">St. Joseph High School</div>
+                <div class="edu-deg">Secondary School Certificate (SSC)</div>
+                <div class="edu-meta">Dhaka, Bangladesh · Jan 2009 – Dec 2016</div>
+                <div class="edu-highlight">GPA: 5.00 / 5.00</div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section>
-        <h2>🏆 Achievements & Honors</h2>
-        <ul class="contribution-list"> 
-            <li>Dean's list award and university merit scholarship recipient in four terms of undergraduate study in BUET.</li>
-            <li>Talent Pool Scholarship for outstanding academic result in the Higher Secondary Certificate Exam.</li>
-            <li>Top 20 finalists of Robi Datathon 2024, a countrywide Deep Learning Competition.</li>
-        </ul>
-    </section>
+      <div class="section-label" style="margin-top:60px">Recognition</div>
+      <h2 class="section-title">Achievements &amp; Honors</h2>
+      <div class="achievement-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-text">
+            <strong style="color:var(--text);display:block;margin-bottom:4px">Top 20 Finalists — Robi Datathon 2024</strong>
+            Countrywide Deep Learning Competition
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🌟</div>
+          <div class="ach-text">
+            <strong style="color:var(--text);display:block;margin-bottom:4px">Dean's List &amp; Merit Scholarship</strong>
+            Recipient in two terms of undergraduate study at BUET
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🎖️</div>
+          <div class="ach-text">
+            <strong style="color:var(--text);display:block;margin-bottom:4px">TalentPool Scholarship</strong>
+            For outstanding academic result in the HSC Exam, Dhaka, Bangladesh
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <section>
-        <h2>📚 Key Related Coursework</h2>
-        <ul class="coursework-list">
-            <li>Structured Programming Language (C)</li>
-            <li>Data Structures and Algorithms (C++)</li>
-            <li>Object Oriented Programming (C++, Java)</li>
-            <li>Software Engineering (Java)</li>
-            <li>Database (SQL)</li>
-            <li>Machine Learning (Python)</li>
-            <li>Computer Architecture</li>
-            <li>Information Systems Design</li>
-            <li>Numerical Methods (Python)</li>
-        </ul>
-    </section>
+<footer class="footer">
+  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+</footer>
 
-    <footer>
-        <hr>
-        <p>© 2025 Sadif Ahmed</p>
-    </footer>
+<script>
+  const btn=document.getElementById('theme-toggle');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('sa-theme')||'dark';
+  html.setAttribute('data-theme',saved);
+  upBtn(saved);
+  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
+  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
+  const cur=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>

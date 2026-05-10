@@ -1,171 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadif Ahmed | Academic Projects</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        /* Helper styles to structure projects as clean, separate academic blocks/cards */
-        .project-item {
-            margin-bottom: 35px;
-            padding: 20px;
-            background-color: #fcfcfc; /* Subtle white background */
-            border: 1px solid #e0e0e0; /* Light border */
-            border-radius: 6px; /* Slightly rounded corners */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03); /* Very subtle lift */
-            transition: box-shadow 0.3s;
-        }
-        .project-item:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Enhance lift on hover */
-        }
-        .project-item h3 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            border-bottom: none;
-            color: #004d99;
-        }
-        .project-meta {
-            font-size: 0.9em;
-            color: #666666;
-            margin-bottom: 10px;
-        }
-        .project-meta strong {
-            color: #333333;
-            margin-right: 5px;
-        }
-        /* Custom list style for project descriptions */
-        .project-item ul {
-            list-style: none; 
-            padding-left: 0;
-            margin-top: 10px;
-        }
-        .project-item ul li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 5px;
-        }
-        .project-item ul li::before {
-            content: "•"; /* Use a simple dot/bullet */
-            position: absolute;
-            left: 0;
-            color: #0066cc; /* Academic blue bullet */
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sadif Ahmed | Academic Projects</title>
+  <meta name="description" content="Academic and software engineering projects by Sadif Ahmed."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience & Research</a>
-            <a href="education.html">Education & Honors</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="cv_viewer.html">CV</a>
-        </nav>
-        <h1>Academic Projects</h1>
-    </header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Research</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="references.html">References</a></li>
+    <li><a href="cv_viewer.html">CV</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+  </div>
+</nav>
 
-    <section>
-        <p class="research-meta">A selection of academic and software engineering projects demonstrating technical proficiency and research application.</p>
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Portfolio</div>
+      <h1 class="section-title">Academic Projects</h1>
+      <p style="color:var(--text2);margin-bottom:36px;font-size:.93rem">
+        A selection of academic and software engineering projects demonstrating technical depth and research application.
+      </p>
 
-        <div class="project-item">
-            <h3>Network Flow Classification and Anomaly Detection</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> Python, Pytorch, Tensorflow, BERT, GPT | 
-                <a href="https://github.com/Mohaimin41/ml-project" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Developed a novel pipeline using BERT and GPT for binary and multi-label classification of anomalous network traffic from pcap data.</li>
-            </ul>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-title">Network Flow Classification &amp; Anomaly Detection</div>
+          <p class="project-desc">
+            Novel pipeline using BERT and GPT for binary and multi-label classification of anomalous network traffic from pcap data.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-p">Python</span>
+            <span class="tag tag-p">PyTorch</span>
+            <span class="tag tag-p">TensorFlow</span>
+            <span class="tag tag-p">BERT</span>
+            <span class="tag tag-p">GPT</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/Mohaimin41/ml_project" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
         </div>
 
-        <div class="project-item">
-            <h3>Machine Learning Algorithms and Neural Network from Scratch</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> Python, Numpy, Scikit-learn | 
-                <a href="https://github.com/Sadif-Ahmed/CSE-472" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Built a feed-forward neural network and the Adam optimizer from scratch using only numpy.</li>
-                <li>Implemented core ML algorithms: logistic regression (with bagging/stacking), SVD (for image reconstruction), PCA, and GMM/EM clustering.</li>
-            </ul>
-        </div>
-        
-        <div class="project-item">
-            <h3>AuthentiDocs Team Collaboration Authenticated By Digital Signature</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> JavaScript, TypeScript, Svelte, PostgreSQL, Supabase, Vercel | 
-                <a href="https://github.com/AuthentiDocs/authentidocs" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Created a full-stack document management application integrating file flow, sharing, digital signature and verification.</li>
-                <li>Focused on back-end development for the document management and digital signature application.</li>
-            </ul>
+        <div class="project-card reveal">
+          <div class="project-title">ML Algorithms &amp; Neural Network from Scratch</div>
+          <p class="project-desc">
+            Core ML algorithms (logistic regression, SVD, PCA, GMM/EM) and a feed-forward neural net with Adam optimizer — all in pure NumPy.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-p">Python</span>
+            <span class="tag tag-p">NumPy</span>
+            <span class="tag tag-p">Scikit-learn</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/Sadif-Ahmed/CSE-472" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
         </div>
 
-        <div class="project-item">
-            <h3>Cryptography, Malware Analysis, and Security Attacks</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> Python, Docker, Wireshark, Azure Cloud | 
-                <a href="https://github.com/Sadif-Ahmed/CSE-406" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Implemented AES, Diffie-Hellman, and RSA with socket communication.</li>
-                <li>Demonstrated a buffer-overflow attack and pedagogical malware functionalities in Docker.</li>
-            </ul>
+        <div class="project-card reveal">
+          <div class="project-title">AuthentiDocs — Team Collaboration with Digital Signatures</div>
+          <p class="project-desc">
+            Full-stack document management app with file flow, sharing, digital signature, and verification. Back-end focused.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-s">JS / TS</span>
+            <span class="tag tag-s">Svelte</span>
+            <span class="tag tag-s">PostgreSQL</span>
+            <span class="tag tag-s">Supabase</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/AuthentiDocs/authentidocs" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
         </div>
 
-        <div class="project-item">
-            <h3>Operating System Internals with xv6</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> Bash, C, Assembly | 
-                <a href="https://github.com/Sadif-Ahmed/CSE-314" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Implemented system calls and the round robin scheduler in the xv6 operating system.</li>
-            </ul>
+        <div class="project-card reveal">
+          <div class="project-title">Cryptography, Malware Analysis &amp; Security Attacks</div>
+          <p class="project-desc">
+            Implemented AES, Diffie-Hellman, RSA with sockets. Demonstrated buffer-overflow attack and pedagogical malware in Docker.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-h">Python</span>
+            <span class="tag tag-h">Docker</span>
+            <span class="tag tag-h">Wireshark</span>
+            <span class="tag tag-h">Azure</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/Sadif-Ahmed/CSE-406" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
         </div>
 
-        <div class="project-item">
-            <h3>VLAN Configuration and Wireless Network Simulation</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> Java, Cisco Packet Tracer, NS3 | 
-                <a href="https://github.com/Sadif-Ahmed/CSE-322" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Implemented threaded server-client sockets and configured NAT/ACLS on VLANs.</li>
-            </ul>
-        </div>
-        
-        <div class="project-item">
-            <h3>Anidex - Simple Online Anime Database</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> JavaScript, Svelte, Express.JS, PostgreSQL | 
-                <a href="https://github.com/KyojinsAnidex/Anidex" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Developed a full-stack anime database with features for listing, discovery, and forum discussions.</li>
-            </ul>
+        <div class="project-card reveal">
+          <div class="project-title">VLAN Configuration &amp; Wireless Network Simulation</div>
+          <p class="project-desc">
+            Threaded server-client sockets, NAT and ACL on VLANs, and simulated wired/wireless mobile networks.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-a">Java</span>
+            <span class="tag tag-a">Cisco Packet Tracer</span>
+            <span class="tag tag-a">NS3</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/Sadif-Ahmed/CSE-322" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
         </div>
 
-        <div class="project-item">
-            <h3>Online Utility and Handyman Services</h3>
-            <p class="project-meta">
-                <strong>Tools:</strong> JavaScript, Svelte, ExpressJS, PostgreSQL | 
-                <a href="https://github.com/Siam11651/cse326-project" target="_blank">GitHub Link</a>
-            </p>
-            <ul>
-                <li>Full-stack development of a service application following a modular design and web development best practices.</li>
-            </ul>
+        <div class="project-card reveal">
+          <div class="project-title">Operating System Internals with xv6</div>
+          <p class="project-desc">
+            Explored bash scripting and synchronization (pthreads). Implemented system calls and round-robin scheduler in xv6.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-a">Bash</span>
+            <span class="tag tag-a">C</span>
+            <span class="tag tag-a">Assembly</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/Sadif-Ahmed/CSE-314" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
         </div>
 
-    </section>
+        <div class="project-card reveal">
+          <div class="project-title">Anidex — Online Anime Database</div>
+          <p class="project-desc">
+            Full-stack anime database with listing, discovery, and forum discussions. Front-end and full-stack integration focused.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-s">JS</span>
+            <span class="tag tag-s">Svelte</span>
+            <span class="tag tag-s">ExpressJS</span>
+            <span class="tag tag-s">PostgreSQL</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/KyojinsAnidex/Anidex" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
+        </div>
 
-    <footer>
-        <hr>
-        <p>© 2025 Sadif Ahmed</p>
-    </footer>
+        <div class="project-card reveal">
+          <div class="project-title">Online Utility &amp; Handyman Services</div>
+          <p class="project-desc">
+            Full-stack service application using Svelte and PostgreSQL following modular design and web development best practices.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-s">JS</span>
+            <span class="tag tag-s">Svelte</span>
+            <span class="tag tag-s">ExpressJS</span>
+            <span class="tag tag-s">PostgreSQL</span>
+          </div>
+          <div class="project-footer">
+            <span></span>
+            <a href="https://github.com/Siam11651/cse326-project" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+</footer>
+
+<script>
+  const btn=document.getElementById('theme-toggle');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('sa-theme')||'dark';
+  html.setAttribute('data-theme',saved);
+  upBtn(saved);
+  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
+  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
+  const cur=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>

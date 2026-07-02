@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+/* Fonts are loaded via <link rel="preconnect"/stylesheet"> in each page's <head> for faster rendering. */
 
 /* ── Custom Properties ── */
 :root {
@@ -117,6 +117,15 @@ body::before{
 }
 .theme-btn:hover{border-color:var(--primary);color:var(--primary);}
 
+.menu-toggle{
+  display:none;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:var(--rs);
+  background:var(--surface);border:1px solid var(--border);
+  color:var(--text);font-size:1.1rem;line-height:1;
+  cursor:pointer;transition:all var(--t);
+}
+.menu-toggle:hover{border-color:var(--primary);color:var(--primary);}
+
 /* ── Layout ── */
 main{position:relative;z-index:1;padding-top:var(--nh);}
 .container{max-width:var(--mw);margin:0 auto;padding:0 28px;}
@@ -177,6 +186,7 @@ main{position:relative;z-index:1;padding-top:var(--nh);}
   width:2px;background:linear-gradient(180deg,var(--primary),transparent);
 }
 .timeline-item{position:relative;margin-bottom:36px;}
+.card-title{font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text);}
 .timeline-item::before{
   content:'';position:absolute;left:-24px;top:8px;
   width:10px;height:10px;border-radius:50%;
@@ -333,7 +343,7 @@ a:hover{color:var(--secondary);}
 .project-card:hover{border-color:var(--border-b);transform:translateY(-3px);box-shadow:0 12px 36px var(--glow);}
 .project-title{font-family:var(--fh);font-size:1rem;font-weight:600;color:var(--text);}
 .project-desc{font-size:.85rem;color:var(--text2);flex:1;line-height:1.6;}
-.project-footer{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;margin-top:auto;}
+.project-footer{display:flex;justify-content:flex-end;align-items:flex-end;gap:8px;margin-top:auto;}
 
 /* ── Reference cards ── */
 .ref-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
@@ -373,7 +383,18 @@ a:hover{color:var(--secondary);}
   .hero-actions,.hero-socials{justify-content:center;}
   .hero-desc{margin:0 auto 28px;}
   .avatar-ring{width:140px;height:140px;}
-  .nav-links{display:none;}
+  .menu-toggle{display:flex;}
+  .nav-links{
+    position:fixed;top:var(--nh);left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:var(--bg);border-bottom:1px solid var(--border);
+    max-height:0;overflow:hidden;opacity:0;
+    transition:max-height .3s ease,opacity .3s ease;
+    padding:0 16px;
+  }
+  .nav-links.open{max-height:420px;opacity:1;padding:8px 16px 16px;}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:12px 8px;}
   .section{padding:56px 0;}
   .section-title{font-size:1.6rem;}
   .stats-row{justify-content:center;}

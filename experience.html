@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Sadif Ahmed | Research &amp; Publications</title>
   <meta name="description" content="Research experience and publications of Sadif Ahmed — Software Engineering, LLMs, and AI Security."/>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Sadif Ahmed | Research &amp; Publications"/>
+  <meta property="og:description" content="Research experience and publications of Sadif Ahmed — Software Engineering, LLMs, and AI Security."/>
+  <meta property="og:image" content="https://sadif-ahmed.github.io/assets/profile-pic.png"/>
+  <meta property="og:url" content="https://sadif-ahmed.github.io/experience.html"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Sadif Ahmed | Research &amp; Publications"/>
+  <meta name="twitter:description" content="Research experience and publications of Sadif Ahmed — Software Engineering, LLMs, and AI Security."/>
+  <meta name="twitter:image" content="https://sadif-ahmed.github.io/assets/profile-pic.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">Sadif<span>.Ahmed</span></a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="experience.html">Research</a></li>
     <li><a href="education.html">Education</a></li>
@@ -20,7 +33,8 @@
     <li><a href="cv_viewer.html">CV</a></li>
   </ul>
   <div class="nav-right">
-    <button class="theme-btn" id="theme-toggle">☀️ <span>Light</span></button>
+    <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">☀️ <span>Light</span></button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   </div>
 </nav>
 
@@ -34,7 +48,7 @@
         <div class="timeline-item reveal">
           <div class="card">
             <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
-              <h2 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">Lecturer, CSE Department</h2>
+              <h2 class="card-title">Lecturer, CSE Department</h2>
               <span class="tag tag-s">July 2025 – Present</span>
             </div>
             <p style="color:var(--secondary);font-size:.85rem;margin-bottom:10px">BRAC University, Dhaka, Bangladesh</p>
@@ -49,7 +63,7 @@
         <div class="timeline-item reveal">
           <div class="card">
             <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
-              <h2 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">Research Assistant, CSE Department</h2>
+              <h2 class="card-title">Research Assistant, CSE Department</h2>
               <span class="tag tag-a">March 2025 – Present</span>
             </div>
             <p style="color:var(--secondary);font-size:.85rem;margin-bottom:12px">Bangladesh University of Engineering &amp; Technology (BUET), Dhaka, Bangladesh</p>
@@ -81,7 +95,7 @@
       <!-- Paper 1 -->
       <div class="card research-card reveal" style="margin-bottom:24px">
         <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:10px">
-          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text);flex:1">
+          <h3 style="flex:1">
             Secret Breach Detection in Source Code with Large Language Models
           </h3>
         </div>
@@ -113,7 +127,7 @@
       <!-- Paper 2 -->
       <div class="card research-card reveal" style="margin-bottom:24px">
         <div style="margin-bottom:10px">
-          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+          <h3>
             Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation
           </h3>
         </div>
@@ -149,7 +163,7 @@
       <!-- Paper 3 -->
       <div class="card research-card reveal" style="margin-bottom:24px">
         <div style="margin-bottom:10px">
-          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+          <h3>
             A Survey on Agentic Security: Applications, Threats and Defenses
           </h3>
         </div>
@@ -172,7 +186,7 @@
       <!-- Paper 4 -->
       <div class="card research-card reveal" style="margin-bottom:24px">
         <div style="margin-bottom:10px">
-          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+          <h3>
             BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation
           </h3>
         </div>
@@ -202,7 +216,7 @@
       <!-- Paper 5 -->
       <div class="card research-card reveal" style="margin-bottom:24px">
         <div style="margin-bottom:10px">
-          <h3 style="font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--text)">
+          <h3>
             ISSUEGUARD: Real-Time Secret Leak Prevention Tool for GitHub Issue Reports
           </h3>
         </div>
@@ -236,21 +250,9 @@
 </main>
 
 <footer class="footer">
-  <p>© 2026 Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
+  <p>© <span id="cur-year">2026</span> Sadif Ahmed · Dhaka, Bangladesh 🇧🇩</p>
 </footer>
 
-<script>
-  const btn=document.getElementById('theme-toggle');
-  const html=document.documentElement;
-  const saved=localStorage.getItem('sa-theme')||'dark';
-  html.setAttribute('data-theme',saved);
-  upBtn(saved);
-  btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('sa-theme',n);upBtn(n);});
-  function upBtn(t){btn.innerHTML=t==='dark'?'☀️ <span>Light</span>':'🌙 <span>Dark</span>';}
-  const cur=location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('active');});
-  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.08});
-  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-</script>
+<script src="assets/main.js" defer></script>
 </body>
 </html>

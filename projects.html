@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Sadif Ahmed | Academic Projects</title>
+  <title>Sadif Ahmed | Projects</title>
   <meta name="description" content="Academic and software engineering projects by Sadif Ahmed."/>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Sadif Ahmed | Academic Projects"/>
+  <meta property="og:title" content="Sadif Ahmed | Projects"/>
   <meta property="og:description" content="Academic and software engineering projects by Sadif Ahmed."/>
   <meta property="og:image" content="https://sadif-ahmed.github.io/assets/profile-pic.png"/>
   <meta property="og:url" content="https://sadif-ahmed.github.io/projects.html"/>
   <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="Sadif Ahmed | Academic Projects"/>
+  <meta name="twitter:title" content="Sadif Ahmed | Projects"/>
   <meta name="twitter:description" content="Academic and software engineering projects by Sadif Ahmed."/>
   <meta name="twitter:image" content="https://sadif-ahmed.github.io/assets/profile-pic.png"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -42,12 +42,45 @@
   <section class="section">
     <div class="container">
       <div class="section-label">Portfolio</div>
-      <h1 class="section-title">Academic Projects</h1>
+      <h1 class="section-title">Projects</h1>
       <p style="color:var(--text2);margin-bottom:36px;font-size:.93rem">
         Academic and software projects. Each card links to the code on GitHub.
       </p>
 
       <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-title">Automated Assignment Grader</div>
+          <p class="project-desc">
+            A command-line tool that grades handwritten PDF submissions against a master solution with a two-stage multimodal LLM pipeline served through NVIDIA NIM. It saves checkpoints, retries on rate limits and writes a summary CSV for each batch.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-p">Python</span>
+            <span class="tag tag-p">Multimodal LLMs</span>
+            <span class="tag tag-p">NVIDIA NIM</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Sadif-Ahmed/assignment_grader_helper" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-title">WorkoutTracker: Workout &amp; Calorie Tracker</div>
+          <p class="project-desc">
+            A progressive web app for a small group of friends to log workouts against their own split days. It estimates calories from meal photos with an LLM and syncs step counts from iOS Shortcuts.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-s">Preact</span>
+            <span class="tag tag-s">Vite</span>
+            <span class="tag tag-s">Supabase</span>
+            <span class="tag tag-s">Cloudflare Workers</span>
+            <span class="tag tag-s">Chart.js</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Sadif-Ahmed/gym-tracker" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
+            <a href="https://gym-tracker.sadif-ahmed.workers.dev" target="_blank" rel="noopener" class="btn btn-outline btn-sm">↗ Live</a>
+          </div>
+        </div>
 
         <div class="project-card reveal">
           <div class="project-title">Network Flow Classification &amp; Anomaly Detection</div>
@@ -69,7 +102,7 @@
         <div class="project-card reveal">
           <div class="project-title">ML Algorithms &amp; Neural Network from Scratch</div>
           <p class="project-desc">
-            Logistic regression, SVD, PCA and Gaussian mixture models with EM, plus a feed-forward neural network and the Adam optimizer built from scratch in NumPy.
+            Logistic regression with bagging and stacking ensembles, PCA, an EM algorithm for Poisson mixture models and a feed-forward neural network with batch normalization, dropout and the Adam optimizer, all built from scratch in NumPy. The network is trained on Fashion-MNIST.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:6px">
             <span class="tag tag-p">Python</span>
@@ -116,7 +149,7 @@
         <div class="project-card reveal">
           <div class="project-title">VLAN Configuration &amp; Wireless Network Simulation</div>
           <p class="project-desc">
-            Built a multithreaded client-server program with sockets. Configured NAT and ACLs on VLANs. Simulated wired and wireless mobile networks.
+            Built a multithreaded client-server program with sockets. Configured NAT and ACLs on VLANs. Simulated wired and wireless mobile networks and implemented TCP Adaptive Reno congestion control in NS3.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:6px">
             <span class="tag tag-a">Java</span>
@@ -131,7 +164,7 @@
         <div class="project-card reveal">
           <div class="project-title">Operating System Internals with xv6</div>
           <p class="project-desc">
-            Practiced Bash scripting and thread synchronization with pthreads. Added system calls and a round-robin scheduler to the xv6 operating system.
+            Practiced Bash scripting and thread synchronization with pthreads. Added system calls and a scheduler with lottery and round-robin queues to the xv6 operating system.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:6px">
             <span class="tag tag-a">Bash</span>
@@ -156,22 +189,6 @@
           </div>
           <div class="project-footer">
             <a href="https://github.com/KyojinsAnidex/Anidex" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-title">Online Utility &amp; Handyman Services</div>
-          <p class="project-desc">
-            A full-stack web app for utility and handyman services, built with Svelte, ExpressJS and PostgreSQL in a modular design.
-          </p>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="tag tag-s">JS</span>
-            <span class="tag tag-s">Svelte</span>
-            <span class="tag tag-s">ExpressJS</span>
-            <span class="tag tag-s">PostgreSQL</span>
-          </div>
-          <div class="project-footer">
-            <a href="https://github.com/Siam11651/cse326-project" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⌥ GitHub</a>
           </div>
         </div>
 

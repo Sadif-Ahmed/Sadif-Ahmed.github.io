@@ -70,6 +70,14 @@
           pop.className = 'pub-pop';
           card.querySelectorAll('.contribution, .supervisor').forEach((el) => pop.append(el.cloneNode(true)));
           li.append(pop);
+          // Open upward when the card would run off the bottom of the screen.
+          const place = () => {
+            const r = li.getBoundingClientRect();
+            const below = window.innerHeight - r.bottom;
+            li.classList.toggle('pop-up', below < pop.offsetHeight + 16 && r.top > below);
+          };
+          li.addEventListener('mouseenter', place);
+          li.addEventListener('focusin', place);
         });
       })
       .catch(() => {});

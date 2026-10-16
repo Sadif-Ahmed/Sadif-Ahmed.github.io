@@ -39,47 +39,94 @@
 </nav>
 
 <main>
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-text reveal">
-          <div style="margin-bottom:14px">
-            <span class="tag tag-s">🟢 Open to Research Collaboration</span>
-          </div>
-          <h1 class="hero-name"><span class="grad">Sadif Ahmed</span></h1>
-          <p class="hero-role">Lecturer, BRAC University · Research Assistant, BUET</p>
-          <p class="hero-desc">
-            I study large language models (LLMs) in software engineering and security.
-            My papers cover secret leaks in code and issue reports, the security and privacy of LLM agents
-            and sycophancy in medical vision-language models.
-          </p>
-          <div class="hero-actions">
-            <a href="publications.html" class="btn btn-primary">View Publications ↗</a>
-            <a href="cv_viewer.html" class="btn btn-outline">View CV</a>
-          </div>
-          <div class="hero-socials">
-            <a href="https://github.com/Sadif-Ahmed" target="_blank" rel="noopener" class="social-link">⌥ GitHub</a>
-            <a href="https://www.linkedin.com/in/sadif-ahmed-092b60307/" target="_blank" rel="noopener" class="social-link">in LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=jLFo5SoAAAAJ&hl=en" target="_blank" rel="noopener" class="social-link">🎓 Scholar</a>
-            <a href="https://cse.sds.bracu.ac.bd/faculty_profile/448/sadif_ahmed" target="_blank" rel="noopener" class="social-link">🏫 BRACU</a>
-            <a href="mailto:ahmedsadif67@gmail.com" class="social-link">✉ Email</a>
-            <a href="tel:8801521564856" class="social-link">📞 Phone</a>
-          </div>
-        </div>
-        <div class="hero-avatar reveal">
-          <div class="avatar-ring">
-            <img src="assets/profile-pic.png" alt="Sadif Ahmed profile photo"/>
-          </div>
-        </div>
+  <div class="home-layout">
+    <aside class="profile reveal">
+      <div class="avatar-ring">
+        <img src="assets/profile-pic.png" alt="Sadif Ahmed profile photo"/>
       </div>
+      <span class="tag tag-s">🟢 Open to Research Collaboration</span>
+      <h1 class="hero-name"><span class="grad">Sadif Ahmed</span></h1>
+      <p class="hero-role">Lecturer, BRAC University<br/>Research Assistant, BUET</p>
+      <p class="hero-desc">
+        I study large language models (LLMs) in software engineering and security.
+        My papers cover secret leaks in code and issue reports, the security and privacy of LLM agents
+        and sycophancy in medical vision-language models.
+      </p>
+      <div class="hero-actions">
+        <a href="publications.html" class="btn btn-primary">View Publications ↗</a>
+        <a href="cv_viewer.html" class="btn btn-outline">View CV</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Sadif-Ahmed" target="_blank" rel="noopener" class="social-link">⌥ GitHub</a>
+        <a href="https://www.linkedin.com/in/sadif-ahmed-092b60307/" target="_blank" rel="noopener" class="social-link">in LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=jLFo5SoAAAAJ&hl=en" target="_blank" rel="noopener" class="social-link">🎓 Scholar</a>
+        <a href="https://cse.sds.bracu.ac.bd/faculty_profile/448/sadif_ahmed" target="_blank" rel="noopener" class="social-link">🏫 BRACU</a>
+        <a href="mailto:ahmedsadif67@gmail.com" class="social-link">✉ Email</a>
+        <a href="tel:8801521564856" class="social-link">📞 Phone</a>
+      </div>
+    </aside>
 
-    </div>
-  </section>
+    <div class="home-main">
+      <section class="reveal">
+        <div class="home-head">
+          <h2 class="section-title">Experience</h2>
+          <a href="experience.html" class="more-link">Experience and skills →</a>
+        </div>
+        <div class="exp-row">
+          <div class="card exp-card">
+            <div class="mini-title">UIUC++ Summer Internship</div>
+            <div class="mini-meta">University of Virginia, USA (remote)</div>
+            <span class="tag tag-h" style="margin-top:8px">Summer 2026</span>
+          </div>
+          <div class="card exp-card">
+            <div class="mini-title">Lecturer</div>
+            <div class="mini-meta">CSE Department, BRAC University</div>
+            <span class="tag tag-s" style="margin-top:8px">Jul 2025 – Present</span>
+          </div>
+          <div class="card exp-card">
+            <div class="mini-title">Research Assistant</div>
+            <div class="mini-meta">CSE Department, BUET</div>
+            <span class="tag tag-a" style="margin-top:8px">Mar 2025 – Present</span>
+          </div>
+        </div>
+      </section>
 
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="home-grid">
-        <div class="reveal">
+      <section class="reveal" style="margin-top:26px">
+        <div class="home-head">
+          <h2 class="section-title">Publications</h2>
+          <a href="publications.html" class="more-link">All publications, including 2 under review →</a>
+        </div>
+        <ul class="pub-list">
+          <li>
+            <div class="pub-head"><span class="badge badge-pub">✓ TMLR</span><a class="mini-title" href="https://arxiv.org/abs/2510.06445" target="_blank" rel="noopener">A Survey on Agentic Security: Applications, Threats and Defenses</a></div>
+            <p class="pub-sum">Survey of 260+ papers on LLM-agent applications, threats and defenses.</p>
+            <p class="pub-people">Supervisors: Dr. Md Rizwan Parvez, Dr. Farig Sadeque · Collaborators: Md Nafiu Rahman, Asif Shahriar</p>
+          </li>
+          <li>
+            <div class="pub-head"><span class="badge badge-pub">✓ FSE 2026</span><a class="mini-title" href="https://dl.acm.org/doi/10.1145/3803437.3806406" target="_blank" rel="noopener">IssueGuard: Real-Time Secret Leak Prevention Tool for GitHub Issue Reports</a></div>
+            <p class="pub-sum">Real-time Chrome extension that flags secrets in GitHub issue reports.</p>
+            <p class="pub-people">Supervisors: Dr. Rifat Shahriyar, Dr. Gias Uddin · Collaborators: Zahin Wahab, Md Nafiu Rahman</p>
+          </li>
+          <li>
+            <div class="pub-head"><span class="badge badge-pub">✓ MSR 2026</span><a class="mini-title" href="https://dl.acm.org/doi/10.1145/3793302.3793348" target="_blank" rel="noopener">Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation</a></div>
+            <p class="pub-sum">LLM pipeline and 54,148-instance benchmark for secrets in GitHub issues.</p>
+            <p class="pub-people">Supervisors: Dr. Rifat Shahriyar, Dr. Gias Uddin · Collaborators: Zahin Wahab, Md Nafiu Rahman</p>
+          </li>
+          <li>
+            <div class="pub-head"><span class="badge badge-acc">✓ BLP-2025</span><a class="mini-title" href="https://aclanthology.org/2025.banglalp-1.66/" target="_blank" rel="noopener">BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation</a></div>
+            <p class="pub-sum">Two collaborating LLMs generate code from Bangla descriptions with self-refinement.</p>
+            <p class="pub-people">Collaborators: Md Nafiu Rahman, Mahir Labib Dihan</p>
+          </li>
+          <li>
+            <div class="pub-head"><span class="badge badge-pub">✓ ESEM 2025</span><a class="mini-title" href="https://ieeexplore.ieee.org/document/11323433" target="_blank" rel="noopener">Secret Breach Detection in Source Code with Large Language Models</a></div>
+            <p class="pub-sum">Fine-tuned LLMs cut false positives when detecting secrets in code.</p>
+            <p class="pub-people">Supervisors: Dr. Rifat Shahriyar, Dr. S M Sohan · Collaborators: Zahin Wahab, Md Nafiu Rahman</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="home-grid" style="margin-top:56px">
+        <section class="reveal">
           <div class="section-label">About</div>
           <h2 class="section-title">About Me</h2>
           <div class="card">
@@ -96,8 +143,8 @@
               I teach three courses: Computer Architecture, Software Engineering and System Analysis and Design.
             </p>
           </div>
-        </div>
-        <div class="reveal">
+        </section>
+        <section class="reveal">
           <div class="section-label">Focus Areas</div>
           <h2 class="section-title">Research Interests</h2>
           <div class="interests-grid">
@@ -109,63 +156,10 @@
             <div class="interest-chip"><span class="dot"></span>Web UI Automation</div>
             <div class="interest-chip"><span class="dot"></span>Large Language Models</div>
           </div>
-        </div>
-      </div>
-
-      <div class="home-grid even" style="margin-top:56px">
-        <div class="reveal">
-          <div class="section-label">Career</div>
-          <h2 class="section-title">Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item" style="margin-bottom:18px">
-              <div class="mini-title">UIUC++ Summer Internship</div>
-              <div class="mini-meta">University of Virginia, USA (remote)</div>
-              <span class="tag tag-h" style="margin-top:6px">Summer 2026</span>
-            </div>
-            <div class="timeline-item" style="margin-bottom:18px">
-              <div class="mini-title">Lecturer, CSE Department</div>
-              <div class="mini-meta">BRAC University</div>
-              <span class="tag tag-s" style="margin-top:6px">Jul 2025 – Present</span>
-            </div>
-            <div class="timeline-item" style="margin-bottom:18px">
-              <div class="mini-title">Research Assistant, CSE Department</div>
-              <div class="mini-meta">BUET</div>
-              <span class="tag tag-a" style="margin-top:6px">Mar 2025 – Present</span>
-            </div>
-          </div>
-          <a href="experience.html" class="more-link">View experience and skills →</a>
-        </div>
-        <div class="reveal">
-          <div class="section-label">Research</div>
-          <h2 class="section-title">Publications</h2>
-          <p class="mini-meta" style="margin:-16px 0 18px">Hover over a paper for a summary, supervisors and collaborators.</p>
-          <ul class="mini-list">
-            <li tabindex="0">
-              <span class="badge badge-pub">✓ TMLR</span>
-              <a class="mini-title" href="https://arxiv.org/abs/2510.06445" target="_blank" rel="noopener">A Survey on Agentic Security: Applications, Threats and Defenses</a>
-            </li>
-            <li tabindex="0">
-              <span class="badge badge-pub">✓ FSE 2026</span>
-              <a class="mini-title" href="https://dl.acm.org/doi/10.1145/3803437.3806406" target="_blank" rel="noopener">IssueGuard: Real-Time Secret Leak Prevention Tool for GitHub Issue Reports</a>
-            </li>
-            <li tabindex="0">
-              <span class="badge badge-pub">✓ MSR 2026</span>
-              <a class="mini-title" href="https://dl.acm.org/doi/10.1145/3793302.3793348" target="_blank" rel="noopener">Secret Leak Detection in Software Issue Reports using LLMs: A Comprehensive Evaluation</a>
-            </li>
-            <li tabindex="0">
-              <span class="badge badge-acc">✓ BLP-2025</span>
-              <a class="mini-title" href="https://aclanthology.org/2025.banglalp-1.66/" target="_blank" rel="noopener">BanglaForge: LLM Collaboration with Self-Refinement for Bangla Code Generation</a>
-            </li>
-            <li tabindex="0">
-              <span class="badge badge-pub">✓ ESEM 2025</span>
-              <a class="mini-title" href="https://ieeexplore.ieee.org/document/11323433" target="_blank" rel="noopener">Secret Breach Detection in Source Code with Large Language Models</a>
-            </li>
-          </ul>
-          <a href="publications.html" class="more-link">View all publications, including 2 under review →</a>
-        </div>
+        </section>
       </div>
     </div>
-  </section>
+  </div>
 </main>
 
 <footer class="footer">

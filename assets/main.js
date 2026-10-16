@@ -54,6 +54,27 @@
     revealEls.forEach((el) => observer.observe(el));
   }
 
+  // Home page: fill hover cards from publications.html so the text lives in one place.
+  const pubItems = document.querySelectorAll('.mini-list li');
+  if (pubItems.length) {
+    fetch('publications.html')
+      .then((r) => r.text())
+      .then((html) => {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        pubItems.forEach((li) => {
+          const href = li.querySelector('a').getAttribute('href');
+          const card = [...doc.querySelectorAll('.research-card')]
+            .find((c) => c.querySelector(`a[href="${href}"]`));
+          if (!card) return;
+          const pop = document.createElement('div');
+          pop.className = 'pub-pop';
+          card.querySelectorAll('.contribution, .supervisor').forEach((el) => pop.append(el.cloneNode(true)));
+          li.append(pop);
+        });
+      })
+      .catch(() => {});
+  }
+
   const yearEl = document.getElementById('cur-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();

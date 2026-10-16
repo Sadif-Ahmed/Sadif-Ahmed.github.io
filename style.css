@@ -288,6 +288,16 @@ a.mini-title:hover{color:var(--primary);}
 .mini-meta{font-size:.82rem;color:var(--text2);}
 .mini-list{list-style:none;display:flex;flex-direction:column;gap:16px;}
 .mini-list .badge{margin-bottom:6px;}
+.mini-list li{position:relative;outline:none;}
+.pub-pop{
+  position:absolute;left:0;right:0;top:100%;z-index:20;margin-top:8px;padding:16px;
+  background:var(--bg2);border:1px solid var(--border-b);border-radius:var(--r);
+  box-shadow:0 12px 40px var(--glow);
+  opacity:0;visibility:hidden;transform:translateY(-4px);
+  transition:opacity var(--t),transform var(--t),visibility var(--t);
+}
+.mini-list li:hover .pub-pop,.mini-list li:focus-within .pub-pop{opacity:1;visibility:visible;transform:none;}
+.pub-pop .contribution{font-size:.85rem;margin-bottom:10px;}
 .more-link{display:inline-block;margin-top:8px;font-size:.85rem;font-weight:500;}
 
 /* ── Research cards ── */

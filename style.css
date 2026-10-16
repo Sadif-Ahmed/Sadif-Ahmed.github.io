@@ -279,6 +279,17 @@ a:hover{color:var(--secondary);}
   flex-shrink:0;
 }
 
+/* ── Home overview ── */
+.home-grid{display:grid;grid-template-columns:3fr 2fr;gap:32px;align-items:start;}
+.home-grid.even{grid-template-columns:1fr 1fr;}
+.home-grid>*{min-width:0;}
+.mini-title{display:block;font-family:var(--fh);font-weight:600;font-size:.95rem;line-height:1.4;color:var(--text);}
+a.mini-title:hover{color:var(--primary);}
+.mini-meta{font-size:.82rem;color:var(--text2);}
+.mini-list{list-style:none;display:flex;flex-direction:column;gap:16px;}
+.mini-list .badge{margin-bottom:6px;}
+.more-link{display:inline-block;margin-top:8px;font-size:.85rem;font-weight:500;}
+
 /* ── Research cards ── */
 .research-card{margin-bottom:24px;}
 .research-card .card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px;}
@@ -399,5 +410,6 @@ a:hover{color:var(--secondary);}
   .section-title{font-size:1.6rem;}
   .stats-row{justify-content:center;}
   .edu-card{flex-direction:column;gap:12px;}
+  .home-grid,.home-grid.even{grid-template-columns:1fr;}
 }
 @media(max-width:480px){.container{padding:0 16px;}}
